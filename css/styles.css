@@ -10,8 +10,16 @@ h1 {
 
 body {
    background-color: black;
+<<<<<<< HEAD
     background-image: url(../img/image.JPG);
     
+=======
+      background-image: url(../img/image.JPG);
+    background-size: cover;
+   
+    
+   
+>>>>>>> e632106361206a89d6dda7d7c15e1993c591e7a2
         
      background-repeat: no-repeat;
      background-position: right 10%;
