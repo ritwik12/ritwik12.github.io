@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+}
+
+body {
+    background-color: black;
+}
