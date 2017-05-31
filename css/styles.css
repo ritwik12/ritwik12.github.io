@@ -11,6 +11,7 @@ h1 {
 body {
    background-color: black;
     background-image: url(../img/image.JPG);
+    background-size: cover;
    
         
      background-repeat: no-repeat;
