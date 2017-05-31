@@ -9,15 +9,10 @@ h1 {
 }
 
 body {
-<<<<<<< HEAD
    background-color: black;
     background-image: url(../img/image.JPG);
    
         
-=======
-    background-color: black;
-    background-image: url("image.jpg");
->>>>>>> origin/master
      background-repeat: no-repeat;
      background-position: right 10%;
     padding-left: 50px;
