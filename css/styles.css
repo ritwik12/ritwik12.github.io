@@ -11,6 +11,8 @@ h1 {
 body {
    background-color: black;
     background-image: url("image.jpg");
+   
+        
      background-repeat: no-repeat;
      background-position: right 10%;
     padding-left: 50px;
