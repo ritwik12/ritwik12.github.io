@@ -3045,9 +3045,9 @@
 
 #one{
         background-image:url('../../images/welcome.PNG'); 
-   		background-repeat:no-repeat;
-   		background-size:cover;
-		
+   	background-repeat:no-repeat;
+   	background-size:cover;
+	background-attachment: fixed; 	
         color: white;
     
     }
