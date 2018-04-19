@@ -3092,6 +3092,16 @@
 .video-container video.fillWidth {
     width: 100%;
 }
+.overlay {
 
+    position:absolute;
+    color: white;
+    top:0;
+    padding-top: 1cm;
+    padding-left: 3cm;
+    left:0;
+    z-index:1;
+
+}
 
 
