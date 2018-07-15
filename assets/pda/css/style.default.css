@@ -192,7 +192,7 @@ INTRO
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size:contain;
+  background-size:800px 459px;
   -webkit-backface-visibility: hidden;
   padding-top: 200px;
   padding-bottom: 120px;
