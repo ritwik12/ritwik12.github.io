@@ -3105,3 +3105,22 @@
 }
 
 
+.info{
+	color: violet;
+	font-size: 30px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+}
+#info1{
+	font-size: 70px;
+	color: wheat;
+	font-weight: bolder;
+	font-style: normal;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#name1{
+	font-size: 80px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-shadow: tomato;
+	color: tomato;
+}
