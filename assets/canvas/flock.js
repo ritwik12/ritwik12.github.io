@@ -6,12 +6,68 @@ function setup() {
         flock.addBoid(o)
     }
     birdImage = loadImage("assets/canvas/bird.png"),
-    bg = loadImage('assets/img/background_canvas.png'),
-    song = loadSound("assets/canvas/birds.mp3", loaded)
+    bg = loadImage('assets/img/background_canvas.jpg'),
+    setupSoundToggle()
 }
-function loaded() {
-    song.play(),
-    loop()
+// Audio is NOT auto-played: browsers block autoplay and unsolicited sound is
+// poor UX. The 2.1 MB mp3 is also NOT downloaded on page load — it's fetched
+// lazily on the first click of the #sound-toggle button. The boids animation
+// loops on its own (p5 calls draw() automatically after setup).
+var song, soundLoading = false;
+function setSoundBtn(btn, state) {
+    btn.classList.remove('playing', 'loading');
+    if (state === 'playing') {
+        btn.classList.add('playing');
+        btn.setAttribute('aria-label', 'Mute ambient birdsong');
+        btn.innerHTML = '<i class="bx bx-volume-full"></i>';
+    } else if (state === 'loading') {
+        btn.classList.add('loading');
+        btn.setAttribute('aria-label', 'Loading birdsong…');
+        btn.innerHTML = '<i class="bx bx-loader-alt"></i>';
+    } else {
+        btn.setAttribute('aria-label', 'Play ambient birdsong');
+        btn.innerHTML = '<i class="bx bx-volume-mute"></i>';
+    }
+}
+function setupSoundToggle() {
+    var btn = document.getElementById('sound-toggle');
+    if (!btn) return;
+    btn.addEventListener('click', function() {
+        // The browser starts the AudioContext suspended; it can only be resumed
+        // from a user gesture. (This p5.sound build has getAudioContext but not userStartAudio.)
+        if (typeof getAudioContext === 'function') {
+            var ctx = getAudioContext();
+            if (ctx && ctx.state !== 'running') ctx.resume();
+        }
+        // First click: lazy-load the mp3, then start looping once it's ready.
+        if (!song) {
+            if (soundLoading) return;
+            soundLoading = true;
+            setSoundBtn(btn, 'loading');
+            song = loadSound("assets/canvas/birds.mp3",
+                function() { // loaded successfully
+                    soundLoading = false;
+                    song.setLoop(true);
+                    song.play();
+                    setSoundBtn(btn, 'playing');
+                },
+                function(err) { // failed to load/decode — reset so the button isn't stuck
+                    soundLoading = false;
+                    song = undefined;
+                    setSoundBtn(btn, 'muted');
+                    console.error('birdsong failed to load', err);
+                });
+            return;
+        }
+        if (song.isPlaying()) {
+            song.stop();
+            setSoundBtn(btn, 'muted');
+        } else {
+            song.setLoop(true);
+            song.play();
+            setSoundBtn(btn, 'playing');
+        }
+    });
 }
 function draw() {
     background(bg),
