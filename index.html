@@ -2,20 +2,37 @@
 <html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120612656-2"></script>
+  <!-- Google Analytics 4 (gtag.js) -->
+  <!-- NOTE: Universal Analytics (UA-*) was shut down by Google in July 2023 and no longer collects data.
+       Replace G-XXXXXXXXXX below with your GA4 Measurement ID (Admin > Data Streams > Web), or delete this block. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'UA-120612656-2');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
   </script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Ritwik Sharma</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+  <title>Ritwik Sharma — Software Engineer @ LinkedIn</title>
+  <meta name="description" content="Ritwik Sharma — Software Engineer on the Infrastructure team at LinkedIn. I build distributed systems, developer tooling, and notification platforms. Explore my projects, blog, and resume.">
+  <meta name="keywords" content="Ritwik Sharma, Software Engineer, LinkedIn, Infrastructure, Distributed Systems, Backend Developer, gRPC, Bangalore">
+  <meta name="author" content="Ritwik Sharma">
+  <link rel="canonical" href="https://ritwik12.github.io/">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ritwik12.github.io/">
+  <meta property="og:title" content="Ritwik Sharma — Software Engineer @ LinkedIn">
+  <meta property="og:description" content="Software Engineer on the Infrastructure team at LinkedIn. Distributed systems, developer tooling, and notification platforms.">
+  <meta property="og:image" content="https://ritwik12.github.io/assets/img/profile-img-new.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ritwik Sharma — Software Engineer @ LinkedIn">
+  <meta name="twitter:description" content="Software Engineer on the Infrastructure team at LinkedIn. Distributed systems, developer tooling, and notification platforms.">
+  <meta name="twitter:image" content="https://ritwik12.github.io/assets/img/profile-img-new.jpg">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.ico" rel="icon">
@@ -30,12 +47,10 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style.css?v=2" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: MyResume - v2.1.0
@@ -48,7 +63,7 @@
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+  <button type="button" class="mobile-nav-toggle d-xl-none" aria-label="Toggle navigation menu"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
@@ -70,11 +85,12 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Ritwik Sharma</h1>
-      <p>I'm <span class="typed" data-typed-items="Problem Solver, Developer, Learner, Researcher, Open Sourcerer, Engineer"></span></p>
+      <p>I'm <span class="typed" data-typed-items="Problem Solver, Developer, Learner, Researcher, Open Sourcerer, Engineer, Investor, Trader"></span></p>
       <div class="social-links">
-        <a href="https://www.facebook.com/profile.php?id=100009565932458" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://github.com/ritwik12" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/ritwik-sharma-205a85148/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100009565932458" class="facebook" aria-label="Facebook" rel="noopener" target="_blank"><i class="bx bxl-facebook"></i></a>
+        <a href="https://github.com/ritwik12" class="github" aria-label="GitHub" rel="noopener" target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/ritwik-sharma-205a85148/" class="linkedin" aria-label="LinkedIn" rel="noopener" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://x.com/Ritwik1204" class="twitter" aria-label="X (Twitter)" rel="noopener" target="_blank"><i class="bx bxl-twitter"></i></a>
       </div>
     </div>
   </section><!-- End Hero -->
@@ -92,10 +108,10 @@
 
         <div class="row">
           <div class="col-lg-3">
-            <img src="assets/img/profile-img-new.jpg" class="img-fluid" alt="">
+            <img src="assets/img/profile-img-new.jpg" class="img-fluid" alt="Portrait of Ritwik Sharma" width="400" height="400" loading="lazy">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Learner &amp; Developer.</h3>
+            <h3>Software Engineer @ LinkedIn.</h3>
             <br>
             <div class="row">
               <div class="col-lg-6">
@@ -111,22 +127,25 @@
               </div>
             </div>
             <p>
-
-
-		    
-	      I am currently part of the Infrastructure team at LinkedIn, where I focus on developing next-generation infrastructure and platforms. One of my key projects has been the development of <b>gRPCurli</b>, a LinkedIn-specific wrapper built on the powerful <a href="https://github.com/fullstorydev/grpcurl">gRPCurl</a> CLI tool from GitHub. I single-handedly created this tool to enhance our gRPC service infrastructure. 
+	      I'm a software engineer at LinkedIn with <b>7+ years</b> building and owning large-scale distributed systems and backend platforms end-to-end.
 	      <br><br>
 
-	      In addition, I work on <b>Sceptre</b>, a service discovery tool that enables the discovery, exploration, and experimentation with various gRPC resources and APIs. 
-	      When building new products, users might want to expose certain data through their services or might want to consume data from other services. Working on Discovery and Exploration of <b>Entity Relationships</b> to help with that.
-              <br><br>
-	      
-	      I also lead the <b>Ravens</b> project, a sophisticated notification subscriptions system. In Ravens, my team and I implement various notification channels, including email, calls, messages, and Slack, to ensure effective incident communication and management.
+	      My flagship work is <b>gRPCurli</b> — LinkedIn's gRPC developer CLI ("curl for gRPC"), which I created and led from inception to production. Built on the open-source <a href="https://github.com/fullstorydev/grpcurl" rel="noopener" target="_blank">gRPCurl</a> tool, it's distributed across <b>500k+ hosts</b> and was integral to the company-wide migration from rest.li to gRPC. As its sole maintainer, I support teams across the org that rely on it daily — including backend, AI/ML-serving, and data teams.
 	      <br><br>
 
-              Throughout my career, I have primarily focused on backend development, building expertise in distributed systems, infrastructure, scaling, web development, and monitoring and metrics software. <br><br>
+	      I also led the design to bring gRPC service discovery and exploration into <b>Sceptre</b>, LinkedIn's service-exploration portal (<b>4,000+ monthly users</b>), which now surfaces <b>680+ gRPC services</b> and their RPCs org-wide — making it far easier for engineers to find, understand, and try services when building products.
+	      <br><br>
 
-	      I am passionate about tackling complex challenges and leveraging my skills to build robust and scalable solutions.
+	      On the platform side, I've authored shared libraries and driven cross-team migrations — including a vendor-neutral incident-data abstraction that turns recurring tooling migrations into a one-line config change. I'm also tech lead for <b>Ravens</b>, our incident-notification platform (email, call, SMS, Slack), where I own reliability and shipped <b>GenAI-powered incident summaries</b> to speed up response.
+	      <br><br>
+
+	      Across my career I've focused on backend engineering — distributed systems, service frameworks (gRPC / rest.li), APIs, scaling, and observability — and increasingly on applying <b>GenAI and LLMs</b> to real engineering problems. I love tackling complex, ambiguous challenges and building robust, scalable systems that others can build on.
+	      <br><br>
+
+	      Outside of engineering, I'm an active <b>investor and trader</b>, with a keen interest in global markets and commodities.
+	      <br><br>
+
+	      Feel free to reach out — I'm always happy to talk distributed systems, developer platforms, AI infrastructure, or markets.
             </p>
           </div>
         </div>
@@ -141,8 +160,11 @@
 			<a href="https://ritwik12.github.io/Blog/"><h2>Blog</h2></a>
 		      	<a href="https://ritwik12.github.io/Blog/"><i>Visit Blog Website</i></a>
     		</div>
+	    	<div class="text-center mb-4">
+	    		<a href="https://ritwik12.github.io/Blog/" class="btn-embed" rel="noopener" target="_blank"><i class="bx bx-link-external"></i> Open Blog in new tab</a>
+	    	</div>
 	    	<div class="blog-iframe">
-	    		<iframe src="https://ritwik12.github.io/Blog/" width="100%" style="height: 100vh; border: none;" scrolling="auto"></iframe>
+	    		<iframe src="https://ritwik12.github.io/Blog/" width="100%" style="height: 80vh; border: none;" loading="lazy" title="Ritwik Sharma's Blog"></iframe>
 	    	</div>
   	</div>
 </section><!-- End Blog Section -->
@@ -150,38 +172,76 @@
 <!-- ======= Projects Section ======= -->
 <section id="projects" class="projects">
     <div class="container" data-aos="fade-up">
-        <div class="row mt-5"> <!-- Adjusted margin top -->
-            <div class="col-lg-4 mb-4"> <!-- Added margin bottom -->
+        <div class="section-title">
+            <h2>Projects</h2>
+        </div>
+
+        <!-- Work at LinkedIn (internal, no public links) -->
+        <h3 class="projects-subtitle">Work at LinkedIn</h3>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
                 <div class="info">
                     <div class="image round">
-                        <a href="https://github.com/ritwik12/Virtual-Assistant"> <img src="assets/img/AI.PNG" width="250" height="250" /> </a>
+                        <span class="icon-tile" aria-hidden="true"><i class="bx bx-terminal"></i></span>
+                    </div>
+                    <h3>gRPCurli</h3>
+                    <p>A LinkedIn-specific CLI wrapper around gRPCurl that I built end-to-end to make gRPC services easier to call and debug. <em>Internal</em></p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="info">
+                    <div class="image round">
+                        <span class="icon-tile" aria-hidden="true"><i class="bx bx-search-alt"></i></span>
+                    </div>
+                    <h3>Sceptre</h3>
+                    <p>A service-discovery tool for exploring and experimenting with gRPC resources, APIs, and entity relationships. <em>Internal</em></p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="info">
+                    <div class="image round">
+                        <span class="icon-tile" aria-hidden="true"><i class="bx bx-bell"></i></span>
+                    </div>
+                    <h3>Ravens</h3>
+                    <p>A notification-subscriptions platform spanning email, calls, messages, and Slack for incident communication. <em>Internal</em></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Open-source &amp; personal projects -->
+        <h3 class="projects-subtitle">Open Source &amp; Personal</h3>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="info">
+                    <div class="image round">
+                        <a href="https://github.com/ritwik12/Virtual-Assistant" rel="noopener" target="_blank"> <img src="assets/img/AI.jpg" width="250" height="250" alt="Virtual Assistant project" loading="lazy" /> </a>
                     </div>
                     <h3>Virtual Assistant</h3>
-                    <p>Join project</p>
+                    <p>Open-source project</p>
                 </div>
             </div>
-            <div class="col-lg-4 mb-4"> <!-- Added margin bottom -->
+            <div class="col-lg-4 mb-4">
                 <div class="info">
                     <div class="image round">
-                        <a href="https://github.com/ritwik12/Celestial-bodies-detection"> <img src="assets/img/celestial.jpg" width="250" height="250" /> </a>
+                        <a href="https://github.com/ritwik12/Celestial-bodies-detection" rel="noopener" target="_blank"> <img src="assets/img/celestial.jpg" width="250" height="250" alt="Celestial Body Detection project" loading="lazy" /> </a>
                     </div>
                     <h3>Celestial Body Detection</h3>
-                    <p>Join project</p>
+                    <p>Open-source project</p>
                 </div>
             </div>
-            <div class="col-lg-4 mb-4"> <!-- Added margin bottom -->
+            <div class="col-lg-4 mb-4">
                 <div class="info">
                     <div class="image round">
-                        <a href="assets/pda/index.html"> <img src="assets/img/pda.jpg" width="250" height="250" /> </a>
+                        <a href="assets/pda/index.html"> <img src="assets/img/pda.jpg" width="250" height="250" alt="Personal Digital Assistant project" loading="lazy" /> </a>
                     </div>
                     <h3>Personal Digital Assistant</h3>
                     <p>Android</p>
                 </div>
             </div>
-            <div class="col-lg-4 mb-4"> <!-- Added margin bottom -->
+            <div class="col-lg-4 mb-4">
                 <div class="info">
                     <div class="image round">
-                        <a href="https://github.com/ritwik12/Satellite-Log-Data-Analyses"> <img src="assets/img/satellite.jpg" width="250" height="200" /> </a>
+                        <a href="https://github.com/ritwik12/Satellite-Log-Data-Analyses" rel="noopener" target="_blank"> <img src="assets/img/satellite.jpg" width="250" height="200" alt="Satellite Log Data Analyses project" loading="lazy" /> </a>
                     </div>
                     <h3>Satellite Log Data Analyses</h3>
                     <p>Internship project</p>
@@ -197,8 +257,12 @@
 	<div class="section-title">
 		<h2>Resume</h2>
 	</div>
+	<div class="text-center mb-4">
+		<a href="assets/Ritwik_Resume.pdf" class="btn-embed" download><i class="bx bx-download"></i> Download PDF</a>
+		<a href="assets/Ritwik_Resume.pdf" class="btn-embed" rel="noopener" target="_blank"><i class="bx bx-link-external"></i> Open in new tab</a>
+	</div>
     	<div class="resume-iframe">
-      		<iframe src="assets/Ritwik_Resume.pdf" width="100%" style="height: 100vh; border: none;" scrolling="auto"></iframe>
+      		<iframe src="assets/Ritwik_Resume.pdf" width="100%" style="height: 85vh; border: none;" loading="lazy" title="Ritwik Sharma's Resume (PDF)"></iframe>
 	</div>
   </div>
 </section><!-- End Resume Section -->
@@ -252,12 +316,13 @@
 					
 					</div>
       <div class="social-links">
-        <a href="https://www.facebook.com/profile.php?id=100009565932458" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://github.com/ritwik12" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/ritwik-sharma-205a85148/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100009565932458" class="facebook" aria-label="Facebook" rel="noopener" target="_blank"><i class="bx bxl-facebook"></i></a>
+        <a href="https://github.com/ritwik12" class="github" aria-label="GitHub" rel="noopener" target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/ritwik-sharma-205a85148/" class="linkedin" aria-label="LinkedIn" rel="noopener" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://x.com/Ritwik1204" class="twitter" aria-label="X (Twitter)" rel="noopener" target="_blank"><i class="bx bxl-twitter"></i></a>
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Ritwik Sharma</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -270,29 +335,23 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <button type="button" id="sound-toggle" aria-label="Play ambient birdsong"><i class="bx bx-volume-mute"></i></button>
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=2"></script>
   
   <!-- Flocking Boid JS File -->
   <script src="assets/canvas/vendor/p5.min.js"></script>
   <script src="assets/canvas/vendor/p5.dom.min.js"></script>
   <script src="assets/canvas/vendor/p5.sound.min.js"></script>
-  <script src="assets/canvas/flock.js"></script>
+  <script src="assets/canvas/flock.js?v=2"></script>
 
 </body>
 
